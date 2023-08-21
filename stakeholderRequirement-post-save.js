@@ -5,7 +5,7 @@ var projectid = workItem.getProjectId();
 var linkedCF = workItem.getCustomField("linkedWi");
 logWriter.write("Linked CF = "+linkedCF+"\n");
 var allWorkItem = trackerService.queryWorkItems("project.id:"+projectid,"id");
-//logWriter.write("All workItems"+" "+allWorkItem+"\n");
+logWriter.write("All workItems"+" "+allWorkItem+"\n");
 
 function linkWorkItem(workItem)
     {
